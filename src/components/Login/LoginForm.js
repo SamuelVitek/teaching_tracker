@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import LoginInput from './LoginInput';
 import LoginButton from './LoginButton';
+//import { Redirect } from 'react-router-dom'
 
 const LoginForm = () => {
+    const [logged, setLogged] = useState(false);
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
     //TODO handle login through keycloak
     const inputs = [
         {
@@ -15,11 +20,25 @@ const LoginForm = () => {
         }
     ]
 
+    const usernameHandler = (username) => {
+        setUsername(username);
+    }
+
+    const passwordHandler = (password) => {
+        setPassword(password);
+    }
+
+    const inputLoginHandler = () => {
+        if (username === 'admin@admin.cz' && password === 'admin') {
+            setLogged(true);
+        }
+    }
+
     return (
         <div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
-            <form className='space-y-6' action='#' method='POST'>
-                <LoginInput labeling={inputs[0]}/>
-                <LoginInput labeling={inputs[1]}/>
+            <form className='space-y-6' onSubmit={inputLoginHandler}>
+                <LoginInput labeling={inputs[0]} setData={usernameHandler}/>
+                <LoginInput labeling={inputs[1]} setData={passwordHandler}/>
 
                 <LoginButton />
             </form>
