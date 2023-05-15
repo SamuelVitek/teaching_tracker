@@ -17,7 +17,10 @@ const Navigation = (props) => {
             <div className='divide-y'>
                 <ul className='ml-10 flex flex-col'>
                     {menuItems.map(item =>
-                        <NavLink itemName={item}/>
+                        <NavLink
+                            key={item}
+                            itemName={item}
+                        />
                     )}
                 </ul>
             </div>
