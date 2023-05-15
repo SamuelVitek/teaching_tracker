@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonWithText from "../Accessories/ButtonWithText";
+import Button from "../Accessories/Button";
 
 const AddClass = (props) => {
 
@@ -13,15 +13,15 @@ const AddClass = (props) => {
                     <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
 
                         <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                            <ButtonWithText
+                            <Button
                                 key={1}
                                 label={'Add Class'}
-                                classes={'sm:ml-3'}
+                                classes={'text-white sm:ml-3'}
                             />
-                            <ButtonWithText
+                            <Button
                                 key={2}
                                 label={'Cancel'}
-                                classes={'bg-white ring-1 ring-inset ring-gray-300 hover:bg-gray-50 text-gray-900 '}
+                                classes={'bg-white ring-1 ring-inset ring-gray-300 hover:bg-gray-50 text-gray-900'}
                             />
                         </div>
                     </div>

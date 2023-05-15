@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Input from '../Accessories/Input';
-import ButtonWithText from '../Accessories/ButtonWithText';
+import Button from '../Accessories/Button';
 //import { Redirect } from 'react-router-dom'
 
 const LoginForm = () => {
@@ -40,7 +40,10 @@ const LoginForm = () => {
                 <Input labeling={inputs[0]} setData={usernameHandler}/>
                 <Input labeling={inputs[1]} setData={passwordHandler}/>
 
-                <ButtonWithText />
+                <Button
+                    label={'Cancel'}
+                    classes={'text-white'}
+                />
             </form>
 
             {/*<p className='mt-10 text-center text-sm text-gray-500'>*/}

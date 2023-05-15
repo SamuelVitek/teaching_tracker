@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ButtonWithPlus = (props) => {
+const AddButton = (props) => {
     const addItemHandler = () => {
         props.addItemHandler(true);
     }
@@ -17,4 +17,4 @@ const ButtonWithPlus = (props) => {
     );
 }
 
-export default ButtonWithPlus;
+export default AddButton;
