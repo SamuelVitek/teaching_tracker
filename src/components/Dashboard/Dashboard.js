@@ -1,26 +1,11 @@
 import React from "react";
+import ClassList from "../Classes/ClassList";
+import Navigation from "../Navigation/Navigation";
 
 const Dashboard = () => {
     return (
         <div className="flex flex-row h-screen w-screen divide-x">
-            <aside className='basis-1/6 w-80 h-full'>
-                <div className="w-full h-28">
-                    <img
-                        src={require('../../photos/ttracker-logo.jpg')}
-                        alt="Logo"
-                        className='ml-8 mt-8 w-3/6'
-                    />
-                </div>
-                <div className="divide-y">
-                    <ul className="ml-10 flex flex-col">
-                        <li className="text-gray-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium w-min">Dashboard</li>
-                        <li className="text-gray-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium w-min">Team</li>
-                        <li className="text-gray-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium w-min">Projects</li>
-                        <li className="text-gray-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium w-min">Calendar</li>
-                        <li className="text-gray-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium w-min">Reports</li>
-                    </ul>
-                </div>
-            </aside>
+            <Navigation />
             <div className='basis-3/12  pl-10'>
                 <div className='flex mt-10 mb-5'>
                     <h2 className='text-2xl text-gray-700 font-semibold'>Adam Halada</h2>
@@ -32,31 +17,10 @@ const Dashboard = () => {
                         </svg>
                     </button>
                 </div>
-                <div className='divide-y w-3/5'>
-                    <div>
-                        <div className="flex items-center gap-x-4 text-xs pt-5">
-                            <a href="/math"
-                               className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Math</a>
-                            <time className="text-gray-500">Mar 16, 2020</time>
-                        </div>
-                        <div className='pt-3 pb-5 px-3'>
-                            <p>Linear equations</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="flex items-center gap-x-4 text-xs pt-5">
-                            <a href="/math"
-                               className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Math</a>
-                            <time className="text-gray-500">Mar 16, 2020</time>
-                        </div>
-                        <div className='pt-3 pb-5 px-3'>
-                            <p>Linear equations</p>
-                        </div>
-                    </div>
-                </div>
+                <ClassList />
             </div>
             <div className='basis-3/6'>
-
+                {/* TODO dodělat piecharty a listování probíraný látky */}
             </div>
         </div>
     )
