@@ -4,6 +4,7 @@ import Navigation from '../Navigation/Navigation';
 import StudentHeader from '../Student/StudentHeader';
 
 const Dashboard = () => {
+    //TODO dodělat podle toho co si uživatel vybere v záložce studentik
     const students = [
         { name: 'Adam Halada' },
         { name: 'Tereza Chladová' }
@@ -13,7 +14,7 @@ const Dashboard = () => {
         <div className='flex flex-row h-screen w-screen divide-x'>
             <Navigation />
             <div className='basis-3/12  pl-10'>
-                <StudentHeader studentName={} />
+                <StudentHeader studentName={students[0]} />
                 <ClassList />
             </div>
             <div className='basis-3/6'>

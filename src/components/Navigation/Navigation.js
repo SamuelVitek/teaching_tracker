@@ -5,8 +5,8 @@ import NavHeader from './NavHeader';
 const Navigation = (props) => {
     const menuItems = [
         'Dashboard',
-        'Team',
-        'Projects',
+        'Students',
+        'Subjects',
         'Calendar',
         'Reports',
     ]
