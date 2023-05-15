@@ -1,12 +1,12 @@
 import React from 'react';
 
-const LoginInput = (props) => {
+const Input = (props) => {
     let forgottenPassword;
 
     if (props.labeling.vars === 'password') {
         forgottenPassword = (
             <div className='text-sm'>
-                <a href='#' className='font-semibold text-indigo-600 hover:text-indigo-500'>Forgot password?</a>
+                <a href='src/components/Accessories/LoginInput#Input.js' className='font-semibold text-indigo-600 hover:text-indigo-500'>Forgot password?</a>
             </div>
         )
     }
@@ -39,4 +39,4 @@ const LoginInput = (props) => {
 
 }
 
-export default LoginInput;
+export default Input;

@@ -1,5 +1,5 @@
 import React from 'react';
-import ClassItem from "./ClassItem";
+import ClassItem from './ClassItem';
 
 const ClassList = (props) => {
     const classItems = [

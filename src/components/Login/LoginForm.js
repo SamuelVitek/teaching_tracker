@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import LoginInput from './LoginInput';
-import LoginButton from './LoginButton';
+import Input from '../Accessories/Input';
+import ButtonWithText from '../Accessories/ButtonWithText';
 //import { Redirect } from 'react-router-dom'
 
 const LoginForm = () => {
@@ -26,7 +26,7 @@ const LoginForm = () => {
 
     const passwordHandler = (password) => {
         setPassword(password);
-    }
+    }   
 
     const inputLoginHandler = () => {
         if (username === 'admin@admin.cz' && password === 'admin') {
@@ -37,10 +37,10 @@ const LoginForm = () => {
     return (
         <div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
             <form className='space-y-6' onSubmit={inputLoginHandler}>
-                <LoginInput labeling={inputs[0]} setData={usernameHandler}/>
-                <LoginInput labeling={inputs[1]} setData={passwordHandler}/>
+                <Input labeling={inputs[0]} setData={usernameHandler}/>
+                <Input labeling={inputs[1]} setData={passwordHandler}/>
 
-                <LoginButton />
+                <ButtonWithText />
             </form>
 
             {/*<p className='mt-10 text-center text-sm text-gray-500'>*/}

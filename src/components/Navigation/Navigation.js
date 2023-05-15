@@ -1,6 +1,6 @@
 import React from 'react';
-import NavLink from "./NavLink";
-import NavHeader from "./NavHeader";
+import NavLink from './NavLink';
+import NavHeader from './NavHeader';
 
 const Navigation = (props) => {
     const menuItems = [
@@ -14,8 +14,8 @@ const Navigation = (props) => {
     return (
         <aside className='basis-1/6 w-80 h-full'>
             <NavHeader />
-            <div className="divide-y">
-                <ul className="ml-10 flex flex-col">
+            <div className='divide-y'>
+                <ul className='ml-10 flex flex-col'>
                     {menuItems.map(item =>
                         <NavLink itemName={item}/>
                     )}
