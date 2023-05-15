@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 
-const NavHeader = (props) => {
+const NavHeader = () => {
     const logoClasses = 'ml-8 mt-8 w-3/6';
 
     return (

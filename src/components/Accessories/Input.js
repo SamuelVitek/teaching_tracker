@@ -6,7 +6,8 @@ const Input = (props) => {
     if (props.labeling.vars === 'password') {
         forgottenPassword = (
             <div className='text-sm'>
-                <a href='src/components/Accessories/LoginInput#Input.js' className='font-semibold text-indigo-600 hover:text-indigo-500'>Forgot password?</a>
+                {/*TODO Routing to "forgotten password reset" page*/}
+                <a href='/404' className='font-semibold text-indigo-600 hover:text-indigo-500'>Forgot password?</a>
             </div>
         )
     }

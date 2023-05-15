@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddButton = (props) => {
     const addItemHandler = () => {
-        props.addItemHandler(true);
+        props.onAddItemHandler(true);
     }
 
     return (

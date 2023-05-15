@@ -2,7 +2,7 @@ import React from 'react';
 import NavLink from './NavLink';
 import NavHeader from './NavHeader';
 
-const Navigation = (props) => {
+const Navigation = () => {
     const menuItems = [
         'Dashboard',
         'Students',

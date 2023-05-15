@@ -31,6 +31,7 @@ const LoginForm = () => {
     const inputLoginHandler = () => {
         if (username === 'admin@admin.cz' && password === 'admin') {
             setLogged(true);
+            console.log(logged);
         }
     }
 

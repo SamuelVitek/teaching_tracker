@@ -2,7 +2,7 @@ import React from 'react';
 import Button from "../Accessories/Button";
 import Input from "../Accessories/Input";
 
-const AddClass = (props) => {
+const AddClass = () => {
     const inputProperties = [
         {
             label: 'Email address',

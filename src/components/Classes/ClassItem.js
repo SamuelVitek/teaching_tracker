@@ -9,6 +9,7 @@ const ClassItem = (props) => {
         minute: '2-digit',
     }
 
+    // noinspection JSCheckFunctionSignatures
     return (
         <div className='pt-5'>
             <div className='flex items-center gap-x-4 text-xs'>
