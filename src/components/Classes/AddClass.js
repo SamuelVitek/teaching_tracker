@@ -31,7 +31,7 @@ const AddClass = (props) => {
                             <Input labeling={inputProperties[0]} />
                             <Input labeling={inputProperties[0]} />
                         </div>
-                        <div className="bg-gray-50 px-4 sm:flex sm:flex-row-reverse sm:px-6 mr-6">
+                        <div className="px-4 sm:flex sm:flex-row-reverse sm:px-6 mr-6">
                             <Button
                                 key={1}
                                 label={'Add Class'}
