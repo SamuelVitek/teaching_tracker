@@ -13,6 +13,14 @@ const Dashboard = () => {
         { studentsName: 'Tereza Chladová' },
     ]
 
+    const subjects = [
+        { name: 'Maths' },
+        { name: 'Physics' },
+        { name: 'English' },
+        { name: 'Information technology' },
+        { name: 'Databases' },
+    ]
+
     const classItems = [
         {
             subject: 'Math',
@@ -34,7 +42,7 @@ const Dashboard = () => {
 
     return (
         <div className='flex flex-row h-screen w-screen divide-x'>
-            {addClassToggle && <AddClass />}
+            {addClassToggle && <AddClass subjects={subjects} />}
             <Navigation />
             <div className='basis-3/12  pl-10'>
                 <StudentHeader

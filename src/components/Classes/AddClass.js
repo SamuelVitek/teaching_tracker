@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from "../Accessories/Button";
 import Input from "../Accessories/Input";
+import SelectBox from "../Accessories/SelectBox";
 
-const AddClass = () => {
+const AddClass = (props) => {
     const inputProperties = [
         {
             label: 'Email address',
@@ -24,7 +25,7 @@ const AddClass = () => {
                         <h2 className='text-2xl ml-9 mb-5 text-gray-700 font-semibold'>Add new class</h2>
                         <div className='flex justify-evenly py-5'>
                             <Input labeling={inputProperties[0]} />
-                            <Input labeling={inputProperties[0]} />
+                            <SelectBox subjects={props.subjects}/>
                         </div>
                         <div className='flex justify-evenly mb-9'>
                             <Input labeling={inputProperties[0]} />
