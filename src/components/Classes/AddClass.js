@@ -19,9 +19,9 @@ const AddClass = (props) => {
         <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-            <div className="fixed inset-0 z-10 overflow-y-auto">
+            <div className="fixed inset-0 z-1 overflow-y-auto">
                 <div className="flex min-h-full items-end justify-center text-center sm:items-center sm:p-0">
-                    <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg p-5">
+                    <div className="relative transform rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg p-5">
                         <h2 className='text-2xl ml-9 mb-5 text-gray-700 font-semibold'>Add new class</h2>
                         <div className='flex justify-evenly py-5'>
                             <Input labeling={inputProperties[0]} />

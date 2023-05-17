@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import SelectBoxItem from "./SelectBoxItem";
 
 const SelectBox = (props) => {
-    const [isActive, setIsActive] = useState('block');
+    const [isActive, setIsActive] = useState('none');
     const [selectedSubject, setSelectedSubject] = useState(props.subjects[0].name);
 
     const onClickHandler = () => {
@@ -40,7 +40,7 @@ const SelectBox = (props) => {
                     </span>
                 </button>
 
-                <ul className="relative z-10 mt-1 w-48 max-h-56 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+                <ul className="absolute z-100 mt-1 w-48 max-h-56 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
                     tabIndex="-1" role="listbox" aria-labelledby="listbox-label"
                     aria-activedescendant="listbox-option-3"
                     style={{display: isActive}}>
