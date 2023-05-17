@@ -7,7 +7,8 @@ import AddClass from "../Classes/AddClass";
 const Dashboard = () => {
     const [addClassToggle, setAddClassToggle] = useState(false);
 
-    //TODO dodělat podle toho co si uživatel vybere v záložce studenti
+    //TODO finish this up based on (yet non-existing) dashboard with all students
+    //TODO plus pulling the data from MongoDB (waiting till I get there with the course)
     const students = [
         { studentsName: 'Adam Halada' },
         { studentsName: 'Tereza Chladová' },
@@ -52,7 +53,7 @@ const Dashboard = () => {
                 <ClassList classes={classItems} />
             </div>
             <div className='basis-3/6'>
-                {/* TODO dodělat piecharty a listování probíraný látky */}
+                {/* TODO piecharts with data */}
             </div>
         </div>
     )

@@ -6,8 +6,8 @@ import SelectBox from "../Accessories/SelectBox";
 const AddClass = (props) => {
     const inputProperties = [
         {
-            label: 'Email address',
-            vars: 'email'
+            label: 'Class topic',
+            vars: 'text'
         },
         {
             label: 'Password',
@@ -25,11 +25,11 @@ const AddClass = (props) => {
                         <h2 className='text-2xl ml-9 mb-5 text-gray-700 font-semibold'>Add new class</h2>
                         <div className='flex justify-evenly py-5'>
                             <Input labeling={inputProperties[0]} />
-                            <SelectBox subjects={props.subjects}/>
+                            <Input labeling={inputProperties[0]} />
                         </div>
                         <div className='flex justify-evenly mb-9'>
                             <Input labeling={inputProperties[0]} />
-                            <Input labeling={inputProperties[0]} />
+                            <SelectBox subjects={props.subjects}/>
                         </div>
                         <div className="px-4 sm:flex sm:flex-row-reverse sm:px-6 mr-6">
                             <Button
