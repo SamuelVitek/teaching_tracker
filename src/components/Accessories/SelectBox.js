@@ -14,6 +14,7 @@ const SelectBox = (props) => {
     }
 
     const onSelectHandler = (event) => {
+        props.setData(selectedSubject);
         setSelectedSubject(event);
     }
 
@@ -47,6 +48,7 @@ const SelectBox = (props) => {
 
                     {restOfSubjects.map((subject) => (
                         <SelectBoxItem
+                            key={subject.name}
                             subjects={subject.name}
                             onSelectHandler={onSelectHandler}
                         />

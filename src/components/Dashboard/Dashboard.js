@@ -38,12 +38,13 @@ const Dashboard = () => {
     ]
 
     const addClassToggleHandler = (event) => {
+        console.log('Did something happen?')
         setAddClassToggle(event);
     }
 
     return (
         <div className='flex flex-row h-screen w-screen divide-x'>
-            {addClassToggle && <AddClass subjects={subjects} />}
+            {addClassToggle && <AddClass addClassHandler={addClassToggleHandler} subjects={subjects} />}
             <Navigation />
             <div className='basis-3/12  pl-10'>
                 <StudentHeader
